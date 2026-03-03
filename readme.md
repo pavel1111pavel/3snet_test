@@ -1,14 +1,15 @@
-npm init -y
-npm install @playwright/test
-npx playwright install
-npm install -D typescript @types/node
-npm init playwright@latest (жмакать Enter)
-или сразу
-npm init playwright@latest
-npm install dotenv
+## Требования
 
-запуски скриптов 
-    "test": "playwright test",
-    "test:ui": "playwright test --ui",
-    "test:headed": "playwright test --headed",
-    "report": "playwright show-report"
+- Node.js (версия 16 или выше)
+- npm (менеджер пакетов)
+
+## Установка
+
+git clone https://github.com/pavel1111pavel/3snet_test.git
+cd 3snet_test
+npm install
+npx playwright install
+
+npm test
+# или
+npm run test

@@ -1,0 +1,2 @@
+export const VISIBLE_TIME_CONTAINER=10000;
+export const TIME_SCREENSHOT=2000;

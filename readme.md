@@ -13,6 +13,8 @@ npm install
 
 npx playwright install
 
+## Запуск
+
 npm test
 # или
 npm run test

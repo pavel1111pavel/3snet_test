@@ -13,8 +13,10 @@ npm install
 
 npx playwright install
 
-## Запуск
+## Запуск интерфейса
 
-npm test
-# или
-npm run test
+npm test start-test
+
+# открыть браузер
+
+http://localhost:3000

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Test</title>
+</head>
+
+<body>
+
+<h1>Playwright Test</h1>
+
+<button onclick="runTests()">Запустить тесты</button>
+
+<pre id="output"></pre>
+
+<a href="/playwright-report/index.html" target="_blank" style="border: 1px;">
+Открыть результаты тестов после выполнения
+</a>
+<script>
+async function runTests() {
+
+  document.getElementById("output").textContent = "Running tests...";
+
+  const res = await fetch("/run-tests");
+  const data = await res.json();
+
+  document.getElementById("output").textContent =
+    data.stdout || data.stderr;
+}
+</script>
+
+</body>
+</html>
